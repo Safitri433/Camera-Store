@@ -1,0 +1,25 @@
+CAMERA STORE - PROJECT HASIL PENGEMBANGAN
+
+Fitur yang ditambahkan:
+- Status login disimpan dengan SharedPreferences. Aplikasi yang ditutup/dibuka kembali tetap ke Dashboard selama belum Logout.
+- Logout menghapus status login saja; data akun tetap tersimpan.
+- Splash Screen gradasi dengan tulisan Selamat Datang di Camera Store.
+- Ketuk gambar produk untuk proses pembelian; ketuk nama produk untuk detail/deskripsi.
+- Checkout dengan pilihan DANA, OVO, GoPay, ShopeePay, QRIS, transfer bank, tunai, dan kartu debit (simulasi).
+- History pembelian tersimpan lokal.
+- Struk transaksi dapat dicetak atau disimpan sebagai PDF melalui dialog cetak.
+- Update nama, email, dan password.
+- Menu Call Center, SMS, Maps, History, Update Akun, Logout.
+
+PENTING:
+- Nomor penjual di menu Call Center/SMS masih contoh 081234567890. Ganti dengan nomor penjual sebenarnya.
+- Lokasi Maps masih pencarian umum "Camera Store". Ganti query lokasi sesuai alamat agen.
+- Pembayaran adalah simulasi, tidak memotong saldo DANA/OVO dan tidak terhubung ke payment gateway.
+
+Cara menjalankan:
+1. Ekstrak ZIP.
+2. Buka folder Camera_jib di VS Code.
+3. Buka Terminal, jalankan: flutter pub get
+4. Jalankan: flutter run
+
+Catatan: project ini sudah diperbarui pada source code, tetapi belum dapat diuji dengan flutter analyze/build di lingkungan penyusunan ini karena Flutter SDK tidak tersedia di sini. Jika pub get menampilkan konflik versi, kirimkan pesan errornya agar disesuaikan.
